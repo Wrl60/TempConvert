@@ -1,0 +1,53 @@
+Temperature Converter APP
+===
+author: William Lancaster
+date: `r format(Sys.Date(), format="%d %B  %Y")`
+transition: rotate
+
+<small> 
+Coursera Developing Data Products Project
+</small>
+
+Purpose and Features
+===
+- Covert temperature 
+    - Converts Fahrenheit to Celsius
+    - Converts Celsius to Fahrenheit 
+- Tabs at the top of the APP to separate the two types of conversions.
+- Submit button so you can see what your previous input was before entering.
+
+
+Equations used for conversion 
+===
+- Fahrenheit to Celsius
+    - (Fahrenheit -32) x (5/9)
+- Celsius to Fahrenheit
+    - Celsius x (9/5) + 32   Or
+    - ((Celsius x 2) - ((Celsius x 2) x 10%) +32
+
+Example of Conversion
+===
+- Fahrenheit to Celsius
+```{r, echo=TRUE}
+TempC <-(68-32) * (5/9)
+TempC #Temp in Celsius (Converted 68 degrees)
+```
+- Celsius to Fahrenheit
+```{r, echo=TRUE}
+TempF <-20 * (9/5) + 32
+TempF #Temp in Fahrenheit (Converted 20 degrees)
+```
+
+Summary
+===
+- APP Coding 
+    - Written using the Shiny Package
+    - Published on Shiny.IO
+
+-
+- Benefits
+    - Quick conversion from of temperature
+    - Intuitive interface
+    
+
+
